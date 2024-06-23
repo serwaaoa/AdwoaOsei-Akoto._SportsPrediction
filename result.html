@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h3>Prediction Result</h3>
+
+    {% if prediction %}
+        <p>The predicted value is: {{ prediction }} and the confidence level is: {{ confidence }}</p>
+    {% else %}
+        <p>No prediction available.</p>
+    {% endif %}
+</body>
+</html>
